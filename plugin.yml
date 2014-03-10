@@ -1,0 +1,11 @@
+name: SentueLobby
+main: com.sentue.dev.Main
+version: 1.0
+description: >
+             The Main Plugin For The Sentue Server
+commands:
+  test:
+    description: Tests things on the lobby plugin
+  dual:
+    description: Command for the custom dualing plugin
+
