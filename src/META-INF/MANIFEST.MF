@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: D:\DDrive Program Files\Java\jdk\bin\javac.exe
+Main-Class: com.sentue.dev.SentueLobby.Main
+
