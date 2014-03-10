@@ -1,5 +1,5 @@
 name: SentueLobby
-main: com.sentue.dev.Main
+main: com.sentue.dev.SentueLobby.Main
 version: 1.0
 description: >
              The Main Plugin For The Sentue Server

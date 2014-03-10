@@ -1,6 +1,5 @@
 package com.sentue.dev.SentueLobby;
 
-import com.sentue.dev.misc.*;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -8,11 +7,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin implements Listener{
+import com.sentue.dev.SentueLobby.Misc.Dual;
+import com.sentue.dev.SentueLobby.Misc.DualListener;
+import com.sentue.dev.SentueLobby.Misc.DualRequests;
+import com.sentue.dev.SentueLobby.Misc.PlayerMenu;
+import com.sentue.dev.SentueLobby.Misc.PlayerMenuListener;
 
-	public Main() {}
-	private static Main instance = new Main();
-	public static Main getInstance() {return instance;}
+public class Main extends JavaPlugin implements Listener{
 	
 	public void onEnable(){
 		Bukkit.getPluginManager().registerEvents(this, this);
@@ -23,33 +24,6 @@ public class Main extends JavaPlugin implements Listener{
 	public void onDisable(){
 		
 	}
-	
-	/*
-	@EventHandler
-	public void onPlayerJoin(PlayerJoinEvent event){
-		try{
-			Class.forName("com.mysql.jdbc.Driver");
-		
-			Connection con = DriverManager.getConnection("jdbc:mysql://66.85.144.162:3306/mcph21073", "mcph21073", "7750d849a2");
-			
-			PreparedStatement statement = con.prepareStatement("select * from PlayerInfo where Username = ?");
-			statement.setString(1, event.getPlayer().getName());
-		
-			ResultSet result = statement.executeQuery();
-			
-			if(result == null){
-				PreparedStatement statement1 = con.prepareStatement("INSERT INTO PlayerInfo(Username, Rank, Pennies, FirstJoin, LastJoin) VALUES (" + event.getPlayer().getName() + ", Peasant, 0, " + System.currentTimeMillis() + "," + System.currentTimeMillis() + ")");
-				statement1.execute();
-			}else{
-				PreparedStatement statement1 = con.prepareStatement("UPDATE `PlayerInfo` SET `LastJoin`=" + System.currentTimeMillis() + "WHERE Username='" + event.getPlayer().getName() + "'");
-				statement1.execute();
-			}
-			
-		}catch(Exception e){
-			Bukkit.getLogger().severe(e.getMessage());
-		}
-	}
-	*/
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 		if(commandLabel.equalsIgnoreCase("test")){
