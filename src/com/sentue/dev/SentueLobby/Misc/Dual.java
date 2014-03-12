@@ -1,10 +1,11 @@
 package com.sentue.dev.SentueLobby.Misc;
 
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
 
-public class Dual{
+public class Dual extends JavaPlugin{
 	
 	public Dual() {}
 	private static com.sentue.dev.SentueLobby.Misc.Dual instance = new com.sentue.dev.SentueLobby.Misc.Dual();

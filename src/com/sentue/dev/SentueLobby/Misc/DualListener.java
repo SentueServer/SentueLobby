@@ -9,8 +9,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class DualListener implements Listener{
+public class DualListener extends JavaPlugin implements Listener{
 	
 	public DualListener() {}
 	private static DualListener instance = new DualListener();

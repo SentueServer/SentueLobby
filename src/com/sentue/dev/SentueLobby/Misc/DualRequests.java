@@ -2,10 +2,11 @@ package com.sentue.dev.SentueLobby.Misc;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
 
-public class DualRequests{
+public class DualRequests extends JavaPlugin{
 	
 	public DualRequests() {}
 	private static DualRequests instance = new DualRequests();

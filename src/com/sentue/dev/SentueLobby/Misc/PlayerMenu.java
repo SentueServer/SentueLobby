@@ -7,12 +7,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class PlayerMenu{
+public class PlayerMenu extends JavaPlugin{
 
 	public PlayerMenu() {}
 	private static PlayerMenu instance = new PlayerMenu();

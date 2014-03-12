@@ -3,6 +3,7 @@ package com.sentue.dev.SentueLobby.Misc;
 import net.minecraft.server.v1_7_R1.ChatSerializer;
 import net.minecraft.server.v1_7_R1.IChatBaseComponent;
 import net.minecraft.server.v1_7_R1.PacketPlayOutChat;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.craftbukkit.v1_7_R1.entity.CraftPlayer;
@@ -14,8 +15,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class PlayerMenuListener implements Listener{
+public class PlayerMenuListener extends JavaPlugin implements Listener{
 
 	public PlayerMenuListener() {}
 	private static PlayerMenuListener instance = new PlayerMenuListener();
